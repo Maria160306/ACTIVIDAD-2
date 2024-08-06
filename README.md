@@ -1,23 +1,109 @@
 # ACTIVIDAD-2
 ## 1. Diagrama de bloques:
-![Diagrama de bloques](file:///C:/Users/Maria%20Paz/Downloads/Diagrama%20de%20flujo.pdf) 
+
 ## 2. Casos de aplicación: 
 ### Velocidad:
-| Caso | Sensor    | Encabezado | Datos binarios | Paridad | Valor Dec. | Set Point | Error | Error binario | K_P | Control | Codificación CPU    | 
-|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1    | Velocidad | 00         | 0100110101     | 1       | 309 mph    | 320 mph   | -11   | 1111110100    | 1,5 | -16,5   | 0001001101010000001 | 
-| 2    | Velocidad | 00         | 1010010100     | 0       | 660 mph    | 650 mph   | 10    | 0000001010    | 1,5 | 15      | 0010100101000000000 |
-| 3    | Velocidad | 00         | 0111101011     | 0       | 491 mph    | 500 mph   | -9    | 1111110110    | 1,5 | -13,5   | 0001111010110000000 |
+#### Caso 1:
+- Encabezado: 00
+- Datos binarios: 0100110101
+- Paridad: 1 (Impar)
+- Valor Dec: 309 mph
+- Set Point: 320 mph 
+- Error: -11
+- Error binario: 1111110100
+- K_P: 1,5
+- Control: -16,5
+- Codificación CPU: 0001001101010000001
+#### Caso 2:
+- Encabezado: 00
+- Datos binarios: 1010010100
+- Paridad: 0 (par)
+- Valor Dec: 660 mph
+- Set Point: 650 mph 
+- Error: 10
+- Error binario: 0000001010
+- K_P: 1,5
+- Control: 15
+- Codificación CPU: 0010100101000000000
+#### Caso 3:
+- Encabezado: 00
+- Datos binarios: 0111101011
+- Paridad: 0 (par)
+- Valor Dec: 491 mph
+- Set Point: 500 mph 
+- Error: -9
+- Error binario: 1111110110
+- K_P: 1,5
+- Control: -13.5
+- Codificación CPU: 0001111010110000000
 ### Altitud:
-| Caso | Sensor    | Encabezado | Datos binarios | Paridad | Valor Dec. | Set Point | Error | Error binario | K_P | Control | Codificación CPU    |
-| 1    | Altitud   | 01         | 0000100011     | 1       | 1373 ft    | 1400 ft   | -27   | 1111100100    | 1,2 | -32,4   | 0100001000110000001 |  
-| 2    | Altitud   | 01         | 0000111101     | 1       | 2420 ft    | 2500 ft   | -80   | 1110101111    | 1,2 | -96     | 0100001111010000001 |  
-| 3    | Altitud   | 01         | 0010000000     | 0       | 5005 ft    | 5100 ft   | -95   | 1110100000    | 1,2 | -114    | 0100100000000000000 | 
+#### Caso 1: 
+- Encabezado: 01
+- Datos binarios: 0000010101011101
+- Paridad: 1 (impar)
+- Valor Dec: 1373 ft
+- Set Point: 1400 ft 
+- Error: -27
+- Error binario: 1111111111100100
+- K_P: 1,2
+- Control: -32,4
+- Codificación CPU: 0100000101010111011
+#### Caso 2:
+- Encabezado: 01
+- Datos binarios: 0000100101110100 
+- Paridad: 1 (impar)
+- Valor Dec: 2420 ft
+- Set Point: 2500 ft 
+- Error: -80
+- Error binario: 1111111110101111
+- K_P: 1,2
+- Control: -96
+- Codificación CPU: 0100001001011101001
+#### Caso 3: 
+- Encabezado: 01
+- Datos binarios: 0001001110001101 
+- Paridad: 0 (par)
+- Valor Dec: 5005 ft
+- Set Point: 5100 ft 
+- Error: -95
+- Error binario: 1111111110100000
+- K_P: 1,2
+- Control: -114
+- Codificación CPU: 0100010011100011010
 ### Temperatura:
-| Caso | Sensor      | Encabezado | Datos binarios | Paridad | Valor Dec. | Set Point | Error | Error binario | K_P | Control | Codificación CPU    |  
-| 1    | Temperatura | 10         | 000000110110   | 1       | 54°C       | 50°C      | 4     | 000000000100  | 0,8 | 3,2     | 1000000011011000001 | 
-| 2    | Temperatura | 10         | 000001110011   | 0       | 115°C      | 110°C     | 5     | 000000000101  | 0,8 | 4       | 1000000111001100000 | 
-| 3    | Temperatura | 10         | 000010101000   | 1       | 168°C      | 160°C     | 8     | 000000001000  | 0,8 | 6,4     | 1000001010100000001 | 
+#### Caso 1:
+- Encabezado: 10
+- Datos binarios: 000000110110
+- Paridad: 1 (impar)
+- Valor Dec: 54°C
+- Set Point: 50°C 
+- Error: 4
+- Error binario: 000000000100
+- K_P: 0,8
+- Control: 3,2
+- Codificación CPU: 100000001101100000001
+#### Caso 2:
+- Encabezado: 10
+- Datos binarios: 000001110011 
+- Paridad: 0 (par)
+- Valor Dec: 115°C
+- Set Point: 110°C 
+- Error: 5
+- Error binario: 000000000101
+- K_P: 0,8
+- Control: 4
+- Codificación CPU: 100000011100110000000
+#### Caso 3: 
+- Encabezado: 10
+- Datos binarios: 000010101000 
+- Paridad: 1 (impar)
+- Valor Dec: 168°C
+- Set Point: 160°C 
+- Error: 8
+- Error binario: 000000001000
+- K_P: 0,8
+- Control: 6,4
+- Codificación CPU: 100000101010000000001
 ## 3. Conclusiones:
 - El diseño de un sistema de control de variables para una aeronave demuestra la importancia de integrar múltiples módulos y sistemas. Cada componente, desde los sensores hasta la CPU, debe funcionar de manera coherente para garantizar una operación precisa y segura.
 -  La conversión de datos binarios a decimales y viceversa es fundamental para la interpretación y procesamiento de la información.
