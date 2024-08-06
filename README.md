@@ -1,6 +1,6 @@
 # ACTIVIDAD-2
 ## 1. Diagrama de bloques:
-
+![Diagrama de bloques](Bloques)
 ## 2. Casos de aplicación: 
 ### Velocidad:
 #### Caso 1:
